@@ -1,0 +1,28 @@
+.footer {
+    background-color: #1C75BC; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #1C75BC; /* Hover color */
+    background-color: #fff; /* Optional: Background on hover */
+    padding: 2px 5px; /* Optional: Adds slight padding on hover */
+    border-radius: 5px; /* Optional: Rounded edges */
+}
+
+.list-inline {
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.list-inline-item {
+    display: inline;
+    margin: 0 10px;
+}

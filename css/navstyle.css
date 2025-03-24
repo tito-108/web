@@ -1,0 +1,12 @@
+.navbar {
+    background-color: rgb(255, 255, 255); /* Light background */
+}
+
+.navbar .nav-link {
+    color: #1C75BC !important; /* Change link color */
+}
+
+.navbar .nav-link:hover {
+    color: #1C75BC !important; /* Hover effect */
+}
+

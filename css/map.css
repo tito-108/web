@@ -1,0 +1,47 @@
+.full2-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Map container */
+.map-content {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.map-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Info container */
+.info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fff;
+    color: #1C75BC;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+}
+
+.info-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-content p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}

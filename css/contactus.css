@@ -1,0 +1,66 @@
+.container {
+    width: 50%;
+    padding: 30px;
+    background: #1C75BC;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.contact-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-info a {
+    color: #1C75BC;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.map {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+}
+.contact-info a {
+    text-decoration: none;
+    color: #1C75BC;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.contact-info i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-info a:hover i {
+    transform: scale(1.2);
+}
+
+.iframe:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

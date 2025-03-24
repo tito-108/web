@@ -1,0 +1,120 @@
+.full-width-section {
+    display: flex;
+    width: 100%; /* Full width to take up entire viewport */
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9f5ff; /* Same background color for the entire section */
+    padding: 50px 20px; /* Padding around the content */
+    box-sizing: border-box;
+  }
+  
+  .image-container, .text-container {
+    width: 500px; /* Set both text and image containers to the same width */
+    height: 500px; /* Set both text and image containers to the same height */
+  }
+  
+  /* Image container styling */
+  .image-container {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05); /* Hover effect to zoom in */
+  }
+  
+  /* Text container styling */
+  .text-container {
+    flex: 1;
+    background-color: #fff; /* White background for the text area */
+    color: #1C75BC; /* Blue text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .text-container h1 {
+    font-size: 2.5em; /* Adjust header size to be consistent */
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .text-container p {
+    font-size: 1.5em; /* Make the paragraph font size larger */
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+  .full2-section {
+    display: flex;
+    width: 100%; /* Full width to take up entire viewport */
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9f5ff; /* Same background color for the entire section */
+    padding: 50px 20px; /* Padding around the content */
+    box-sizing: border-box;
+  }
+  
+  /* Full2-content layout */
+  .full2-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Image container for .full2-section */
+  .image-content {
+    width: 500px; /* Fixed width */
+    height: 500px; /* Fixed height */
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-content img:hover {
+    transform: scale(1.05); /* Hover effect to zoom in */
+  }
+  
+  /* Text container for .full2-section */
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fff; /* White background for text */
+    color: #1C75BC; /* Blue text color */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 500px; /* Set text container width same as image */
+    height: 500px; /* Set text container height same as image */
+  }
+  
+  .text-content h1 {
+    font-size: 2.5em; /* Adjust header size to be consistent */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1.5em; /* Make the paragraph font size larger */
+    line-height: 1.6;
+  }
