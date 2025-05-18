@@ -1,12 +1,44 @@
+
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
 .navbar {
-    background-color: rgb(255, 255, 255); /* Light background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e2f;
+  padding: 15px 30px;
+  color: #fff;
 }
 
-.navbar .nav-link {
-    color: #1C75BC !important; /* Change link color */
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.navbar .nav-link:hover {
-    color: #1C75BC !important; /* Hover effect */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
+.nav-links li a {
+  text-decoration: none;
+  color: #1C75BC;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #white;
+}
