@@ -1,42 +1,92 @@
-/* Navbar Font and Layout */
+/* General reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1C75BC;
+  font-weight: bold;
+}
+
+/* Navbar styles */
 .navbar {
-  font-family: 'Arial', sans-serif; /* Custom font if needed */
-  font-size: 1rem; /* Consistent size for links */
-  padding: 10px 0; /* Added padding for better spacing */
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid #1C75BC;
 }
 
-/* Navbar Links */
-.nav-link {
-  color: #555; /* Slightly darker color for links */
-  padding: 0.8rem 1.2rem; /* Adjusting padding for better hit area */
-  transition: color 0.3s ease; /* Smooth color transition */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.nav-link:hover {
-  color: #007bff; /* Color on hover (blue) */
-  text-decoration: underline; /* Underline effect on hover */
+.logo {
+  font-size: 1.5rem;
+  color: #1C75BC;
+  font-weight: bold;
 }
 
-/* Active Navbar Link */
-.nav-link.active {
-  color: #007bff;
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-/* Branding Logo */
-.navbar-brand span {
-  font-size: 1.25rem; /* Making the brand text bigger */
-  color: #333; /* Dark color for brand name */
+.nav-links li a:hover {
+  color: #0f4f7d;
 }
 
-/* Navbar Background Color and Shadow */
-.navbar-light {
-  background-color: #ffffff; /* Light background for navbar */
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-color: #007bff; /* Custom color for toggler icon */
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #1C75BC;
+  border-radius: 2px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #333; /* Default link color */
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }
