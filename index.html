@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Icons -->
-    <link rel="icon" type="image/png" href="./images/logo.png">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1FH4z2yD+eN1zJ+3IebhndOtgj1aK7H0Rf+WlH+QQsm" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
     <link rel="stylesheet" href="./css/navstyle.css">
     <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="./css/production.css">
     <link rel="stylesheet" href="./css/map.css">
     <link rel="stylesheet" href="./css/footer.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- Title -->
-    <title>Home</title>
 </head>
-
 <body>
-    <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="./images/logo.png" alt="Logo" height="50" class="me-2 img-fluid">
-      <span class="fw-bold">M&Y Paper</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./pages/product.html">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./pages/about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link activek" href="./pages/contact.html">Contact Us</a>
-        </li>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">MyBrand</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/product.html">Product</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
       </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+  <main>
+    <section style="padding: 100px 20px;">
+      <h1>Welcome to My Website</h1>
+      <p>This is a sample page with a responsive navbar.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 
     <!-- Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
