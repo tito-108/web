@@ -1,12 +1,42 @@
-
+/* Navbar Font and Layout */
 .navbar {
-    background-color: rgb(255, 255, 255); /* Light background */
+  font-family: 'Arial', sans-serif; /* Custom font if needed */
+  font-size: 1rem; /* Consistent size for links */
+  padding: 10px 0; /* Added padding for better spacing */
 }
 
-.navbar .nav-link {
-    color: #1C75BC !important; /* Change link color */
+/* Navbar Links */
+.nav-link {
+  color: #555; /* Slightly darker color for links */
+  padding: 0.8rem 1.2rem; /* Adjusting padding for better hit area */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.navbar .nav-link:hover {
-    color: #1C75BC !important; /* Hover effect */
+.nav-link:hover {
+  color: #007bff; /* Color on hover (blue) */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Active Navbar Link */
+.nav-link.active {
+  color: #007bff;
+}
+
+/* Branding Logo */
+.navbar-brand span {
+  font-size: 1.25rem; /* Making the brand text bigger */
+  color: #333; /* Dark color for brand name */
+}
+
+/* Navbar Background Color and Shadow */
+.navbar-light {
+  background-color: #ffffff; /* Light background for navbar */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: #007bff; /* Custom color for toggler icon */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333; /* Default link color */
 }
